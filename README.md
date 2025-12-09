@@ -64,12 +64,16 @@ b. genotype_gvcf.sh
 Step 5: VCF Processing 
 
 5a) Subset 
+
 5b) Hard-filter for variants that pass filters.
 5c) Biallelic filtering
 
-script(s):
+*script(s)*:
+
 a. subset.sh
+
 b. filter_gatk4.5.sh
+
 c. biallelic_maf.sh
 
 ########################################################################################################

@@ -61,8 +61,20 @@ b. genotype_gvcf.sh
 
 ########################################################################################################
 
-Step 6: VCF Processing 
-(add scripts later)
+Step 5: VCF Processing 
+
+5a) Subset 
+5b) Hard-filter for variants that pass filters.
+5c) Biallelic filtering
+
+script(s):
+a. subset.sh
+b. filter_gatk4.5.sh
+c. biallelic_lownomaf.sh
+
+########################################################################################################
+
+Step 6: Sex association and population genetics analysis (FST, SNP Density, Heterozygosity)
 
 
 

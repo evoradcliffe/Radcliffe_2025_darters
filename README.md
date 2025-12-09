@@ -1,6 +1,7 @@
 # Repository for code used in Radcliffe et al. (2025). 
 The following is code used for the GATK pipeline (from raw reads to biallelic vcf format for the GWAS for sex), MAF and MT/nuc analyses in Radcliffe et al. (2025) *Sex chromosome turnover and mitonuclear conflict drive reproductive isolation*.
 ########################################################################################################
+
 *GATK PIPELINE*
 
 Step 1: Processing raw WGS reads. 
@@ -102,4 +103,5 @@ Step 6: Sex association and population genetics analysis (FST, SNP Density, Hete
 *Plotting scripts for step 6 are in the "plots" folder.*
 
 ########################################################################################################
+
 *MT-Nuc Analyses*

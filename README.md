@@ -70,7 +70,7 @@ Step 5: VCF Processing
 script(s):
 a. subset.sh
 b. filter_gatk4.5.sh
-c. biallelic_lownomaf.sh
+c. biallelic_maf.sh
 
 ########################################################################################################
 

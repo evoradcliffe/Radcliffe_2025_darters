@@ -97,3 +97,9 @@ c. biallelic_maf.sh
 
 Step 6: Sex association and population genetics analysis (FST, SNP Density, Heterozygosity)
 
+########################################################################################################
+
+*Plotting scripts for step 6 are in the "plots" folder.*
+
+########################################################################################################
+*MT-Nuc Analyses*

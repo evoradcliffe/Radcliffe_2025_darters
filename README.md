@@ -14,7 +14,7 @@ Step 1: Processing raw WGS reads.
 
 a. use_trimmomatic.sh
 
-b. run_cutadapt.sh
+b. use_cutadapt.sh
 
 c. combine_reads.sh
 

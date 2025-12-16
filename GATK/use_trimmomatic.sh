@@ -10,7 +10,7 @@
 module load openjdk/17.0.2 trimmomatic/0.39
 module load gcc/12.1.0 perl/5.36.0 parallel/20240622
 
-export HOME=~/rmoran-lab/projects/darter_WGS/Raw_Reads_2025/25205Mra_N25125
+export HOME=/gpfs/data/rmoran-lab/projects/darter_WGS/Raw_Lanes_Concatenated_2024/
 
 paralleltrim() {
   #Get each sample name from the list SampleID.txt (supplied to the parallel command with the -a flag)

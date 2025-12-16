@@ -98,6 +98,29 @@ c. biallelic_maf.sh
 
 Step 6: Sex association and population genetics analysis (FST, SNP Density, Heterozygosity)
 
+*Sex Association*
+
+(add scripts later)
+
+*Popgen*
+
+a) SNP Density
+
+  - extractSNPdensity_darterdata.py > reads SNP density information from multiple samples and calculates, outputs average SNP density for each chromosome block.
+  - snpdensity_foldchange_darters.py > reads in female and male SNP density data (from above) and calculates and outputs M:F SNP density fold change for each chromosome block
+  - WilcoxonTests_SNPdensity.R > significance of above results, add to plot. 
+  - *plotting script* > plot_snpdensity.R
+
+b) FST
+
+  - run_fst.sh > intersex FST values by site, feed in list of male samples and list of female samples.
+  - *plotting script* > fst.R
+
+c) Heterozygosity
+
+  - heterozygosity_BySex_sdr.R > chromosome-level heterozygosity differences (calculated as male - female: if > 0, male-biased, if < 0, female-biased).
+  - *plotting script* > plot_hetdif.R
+
 ########################################################################################################
 
 *Plotting scripts for step 6 are in the "plots" folder.*

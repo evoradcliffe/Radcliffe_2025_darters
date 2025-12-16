@@ -32,7 +32,7 @@ files end in _raw.bam
 
 a. ./make_align_jobs.sh > raw_align_commands.txt
 
-b. run_array.sh (*standard command for running an array job, using the raw_align_commands.txt file generated in 1.)*
+b. run_align.sh (*standard command for running an array job, using the raw_align_commands.txt file generated in 1.)*
 
 ########################################################################################################
 
@@ -44,7 +44,7 @@ Step 3: Process aligned reads.
 
 3c) Split into mapped and unmapped reads > files end in either _mapped.bam or _unmapped.bam
 
-script(s): *all these were run with array jobs, so follow format of make commands.txt file, then run job with the run_array.sh from above*.
+script(s): *all these were run with array jobs, so follow format of make commands.txt file, then run job with the run_align.sh from above*.
 
 a. ./make_align_rgadd.sh > rgadd_commands.txt
 

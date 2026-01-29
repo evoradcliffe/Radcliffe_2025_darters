@@ -109,7 +109,7 @@ a) SNP Density
   - extractSNPdensity_darterdata.py > reads SNP density information from multiple samples and calculates, outputs average SNP density for each chromosome block.
   - snpdensity_foldchange_darters.py > reads in female and male SNP density data (from above) and calculates and outputs M:F SNP density fold change for each chromosome block
   - WilcoxonTests_SNPdensity.R > significance of above results, add to plot. 
-  - *plotting script* > plot_snpdensity.R
+  - *plotting script* > plot_snpdensity.R, Fig2i_plot_snpdensity_Eradiosum.R (*recreates figure specifically*).
 
 b) FST
 
@@ -128,6 +128,8 @@ c) Heterozygosity
 ########################################################################################################
 
 *MT-Nuc Analyses*
+
+Scripts for mitonuclear analyses are in the MT-nuc folder. Each should have a description of what the specific code does. Also in the folder is the aligned Oligocephalus mitochondrial genome fasta file for reference. 
 
 ########################################################################################################
 

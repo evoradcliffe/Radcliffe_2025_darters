@@ -100,7 +100,13 @@ Step 6: Sex association and population genetics analysis (FST, SNP Density, Hete
 
 *Sex Association*
 
-(add scripts later)
+a) PLINK conversion - make .ped and .map files. >> make_input_1.sh
+
+b) Make .bed, .bim, and .fam files. >> make_input_2.sh
+
+c) Convert scaffold names to their associated chromosome number. >> rename.sh
+
+d) Sex association test. >> sex_association.sh
 
 *Popgen*
 
@@ -145,4 +151,18 @@ Step 2: Make "FEMALE UNIVERSAL" set of k-mers, which is used as subtraction set.
 
 ########################################################################################################
 
-Step 3: 
+Step 3: Find candidate male-specific k-mers (Ymers). >> candidate_Ymers.sh
+
+########################################################################################################
+
+Step 4: Create input files for mapping k-mer density to chromosomes. >> input_kmer.sh
+
+########################################################################################################
+
+Step 5: Map k-mers to reference genome, produces density file. >> map_kmers.sh
+
+########################################################################################################
+
+Step 6: Determine shared ancestry and plot. >> shared_ancestry
+
+- Plotting script in *plots* folder.

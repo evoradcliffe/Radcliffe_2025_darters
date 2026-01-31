@@ -1,3 +1,0 @@
-comm -12 <(sort Espec_Y_SHARED.kmers) <(sort Ecaer_Y_SHARED.kmers) > SHARED_BETWEEN_SPECIES.kmers
-
-##This computes base-level coverage of mapped Y-mers across the genome. #Each aligned k-mer contributes coverage where it maps

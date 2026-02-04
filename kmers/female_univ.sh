@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=female_univ_es
+#SBATCH --job-name=female_univ_coll
 #SBATCH --nodes=1
 #SBATCH --partition=tier1q
 #SBATCH --ntasks-per-node=12
 #SBATCH --time=168:00:00
 #SBATCH --mem=60gb
-#SBATCH --output=female_univ_es.out
-#SBATCH --error=female_univ_es.err
+#SBATCH --output=female_univ_coll.out
+#SBATCH --error=female_univ_coll.err
 
 module load gcc/12.1.0 jellyfish/2.3.0
 
@@ -32,12 +32,12 @@ echo "Using SORTTMP=$SORTTMP"
 echo "Using PAR=$PAR"
 echo "SLURM_CPUS_PER_TASK='${SLURM_CPUS_PER_TASK:-}'  SLURM_NTASKS='${SLURM_NTASKS:-}'"
 
+# Extract female kmers passing MINC
+for f in $(cat collettei_females.list); do
+  awk -v m=$MINC '$2>=m {print $1}' ${f}.kmers.tsv | sort -S 4G > ${f}.F.kmers
+done
+
 cat *.F.kmers \
   | sort --temporary-directory="$SORTTMP" -S 8G --parallel="$PAR" \
   | uniq \
   > FEMALE_UNIVERSE.kmers
-
-# Extract female kmers passing MINC
-#for f in $(cat spectabile_females.list); do
-#  awk -v m=$MINC '$2>=m {print $1}' ${f}.kmers.tsv | sort -S 4G > ${f}.F.kmers
-#done
